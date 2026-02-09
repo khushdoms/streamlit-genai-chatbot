@@ -12,7 +12,7 @@ st.set_page_config(
     page_icon="🤖",
     layout="centered",
 )
-st.title("💬 Gen AI Chatbot")
+st.title("💬 Kaushik's Gen AI Chatbot")
 
 # initiate chat history
 if "chat_history" not in st.session_state:
@@ -43,4 +43,5 @@ if user_prompt:
     st.session_state.chat_history.append({"role": "assistant", "content": assistant_response})
 
     with st.chat_message("assistant"):
+
         st.markdown(assistant_response)
